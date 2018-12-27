@@ -4,6 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link href="css/cusReg.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admin</title>
 </head>
@@ -12,9 +13,19 @@
   
   <form:form action="" method="post" modelAttribute="user">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-    Name: <form:input type="text" path="name" /><br/>
-    UserNamee <form:input type="text" path="username"/><br/>
-    Password: <form:input type="password"  path="password"/><br/>
+    
+    <label for="name">Name:</label>
+	<form:input path="name" /><br>
+	
+	<label for="username">UserName:</label>
+	<form:input path="username" /><br>
+	
+	
+	<label for="password">Password:</label>
+	<form:input path="password" /><br>		
+			
+			
+   
     
     <form:button>submit</form:button>
   </form:form>

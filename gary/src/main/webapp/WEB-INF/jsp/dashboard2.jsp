@@ -7,67 +7,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-	crossorigin="anonymous"></script>
-<style>
-div.two {
-	margin-left: 58px;
-}
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 
-div.one {
-	margin-left: 24px;
-}
 
-div.three {
-	margin-left: 22px;
-}
-</style>
-<style>
-table {
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
-}
+<script src="js/button.js"></script>
+<link href="css/table.css" rel="stylesheet">
 
-td, th {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
-}
-
-tr:nth-child(even) {
-	background-color: #dddddd;
-}
-</style>
-
-<script type="text/javascript">
-	$(function() {
-		$("#saveUser").click(function() {
-			window.location.href = "/saveUser";
-		});
-		$("#deleteUser").click(function() {
-			window.location.href = "/deleteUser";
-		});
-		$("#updateUser").click(function() {
-			window.location.href = "/updateUser";
-		});
-		$("#searchUser").click(function() {
-			window.location.href = "/searchUser";
-		});
-		$("#allDetails").click(function() {
-			window.location.href = "/allDetails";
-		});
-	});
-</script>
 <title>Insert title here</title>
 </head>
 <body>

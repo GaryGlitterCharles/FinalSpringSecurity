@@ -7,49 +7,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-	crossorigin="anonymous"></script>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 	
-	<style>
-table {
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
-}
+	
+<link href="css/display.css" rel="stylesheet">
+<script src="js/button.js"></script>
 
-td, th {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
-}
-
-tr:nth-child(even) {
-	background-color: #dddddd;
-}
-</style>
-<style type="text/css">
-div.one {
-	margin-top: 63px;
-	margin-left: 40px;
-}
-</style>
-<script type="text/javascript">
-	$(function() {
-		$("#dashboard").click(function() {
-			window.location.href = "/dashboard";
-		});
-
-	});
-</script>
 <title>search Customer</title>
 </head>
 <body>

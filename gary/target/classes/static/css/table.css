@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+div.two {
+	margin-left: 58px;
+}
+
+div.one {
+	margin-left: 24px;
+}
+
+div.three {
+	margin-left: 22px;
+}
+
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}

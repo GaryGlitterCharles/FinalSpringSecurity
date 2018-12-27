@@ -5,21 +5,17 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Admin</title>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(function () {
-    $("#createAccount").click(function () {
-      window.location.href = "/register";
-    });
-  });
-</script>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/button.js"></script>
+
 </head>
 <body>
 <h1>Welcome!!!</h1>
 <br><br/>
- <button type="button" class="btn" id="createAccount">Create Account</button>
+
+ <button type="button" class="btn btn-success" id="register">Create Account</button>
 </body>
 </html>
