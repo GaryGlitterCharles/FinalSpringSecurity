@@ -21,7 +21,7 @@ public class UserScreenController
 	public String saveUserDetailsGET(Model model)
 	{
 		model.addAttribute("saveUser", new CustomerUser());
-		return "CustomerRegistrationForm";
+		return "CustomerRegister";
 	}
 
 	@PostMapping("/saveUser")
@@ -60,7 +60,7 @@ public class UserScreenController
 
 		model.addAttribute("getUser", new CustomerUser());
 		model.addAttribute("searchedUser", userService.searchUser(customerCode));
-
+		
 		return "update";
 	}
 
@@ -87,5 +87,13 @@ public class UserScreenController
 		model.addAttribute("searchedUser", userService.searchUser(customerCode));
 		model.addAttribute("searchedUserName", userService.searchUserByCustomerName(customerName));
 		return "display";
+	}
+	
+	@GetMapping("/allDetails")
+	public String getDetails(Model model)
+	{
+		 model.addAttribute("allDetails", userService.getdetails());
+		return "dashboard2";
+		 
 	}
 }

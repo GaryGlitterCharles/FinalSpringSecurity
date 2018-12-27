@@ -13,6 +13,6 @@ public class DashboardController {
   
   @GetMapping("/dashboard")
   public String dashboard() {
-    return "dashboard";
+    return "dashboard2";
   }
 }

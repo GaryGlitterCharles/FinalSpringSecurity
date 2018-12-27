@@ -1,13 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-     <%@ taglib prefix="c" 
-       uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
 <style type="text/css">
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
@@ -115,47 +112,6 @@ label.light {
 	}
 }
 </style>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-	crossorigin="anonymous"></script>
-<style>
-div.two {
-	margin-left: 58px;
-}
-
-div.one {
-	margin-left: 24px;
-}
-
-div.three {
-	margin-left: 22px;
-}
-</style>
-<style>
-table {
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
-}
-
-td, th {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
-}
-
-tr:nth-child(even) {
-	background-color: #dddddd;
-}
-</style>
 <script type="text/javascript">
 function validateEmail(emailField){
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
@@ -203,76 +159,40 @@ function addDate(){
 	document.getElementById('datetext').value = day + '-' + month + '-' + year;
 	}
 	}
-</script>
-<script type="text/javascript">
-	$(function() {
-		$("#dashboard").click(function() {
-			window.location.href = "/dashboard";
-		});
+	
 
-	});
 </script>
+<title>Insert title here</title>
 </head>
 <body>
-<form:form action="" modelAttribute="getUser"
-		method="post">
-	Customer Code <form:input path="CustomerCode" />
-	<input type="submit" value="submit" class="btn btn-success" /><br>
-	</form:form>
-	<br><br/>
-	
-	  
-   
-   <div>
-		<table>
+	<form:form action="" method="post" modelAttribute="saveUser" >
 
-			
-				<tr>
-					<th>${searchedUser.customerCode}</th>
-					<th>${searchedUser.customerName}</th>
-					<th>${searchedUser.customerAddress}</th>
-					<th>${searchedUser.pincode}</th>
-					<th>${searchedUser.email}</th>
-					<th>${searchedUser.contactNumber}</th>
-					<th>${searchedUser.registrationDate}</th>
-					<th>${searchedUser.createdBy}</th>
-					<th>${searchedUser.modifiedDate}</th>
-
-				</tr>
-			
-		</table>
-	</div>
-	
-	<br><br/>
-	
-<form:form action="updateUserDetails" modelAttribute="updateUser"
-		method="post">
-<h1>Update Details</h1>
+		<h1>Sign Up</h1>
 
 		<fieldset>
 
 			<label for="Customer Code">Customer Code:</label>
-			<form:input path="CustomerCode"   /><br>
+			<form:input path="CustomerCode" /><br>
 			
 			<label for="Customer Name">Customer Name:</label> 
-			<form:input path="CustomerName"  onblur="validatename(this);"  value="${searchedUser.customerName}" />
+			<form:input path="CustomerName"  onblur="validatename(this);" />
 			
 			
 			 <label for="CustomerAddress">CustomerAddress:</label> 
-			<form:input path="CustomerAddress"  value="${searchedUser.customerAddress}"/>
+			<form:input path="CustomerAddress" />
 			 
 			 
 			  <label for="Pincode">Pincode:</label>
-			  <form:input path="Pincode"  onblur="validatepincode(this);" value="${searchedUser.pincode}" /> 
+			  <form:input path="Pincode"  onblur="validatepincode(this);" /> 
 			  
 			  
 			
 			
 			 <label for="ContactNumber">ContactNumber:</label> 
-			<form:input path="ContactNumber" value="${searchedUser.contactNumber}"/>
+			<form:input path="ContactNumber" />
 			
 			<label for="Email">Email:</label> 
-			<form:input path="Email" onblur="validateEmail(this);"  value="${searchedUser.email}"/>
+			<form:input path="Email" onblur="validateEmail(this);" />
 			
 			  <label for="RegistrationDate">RegistrationDate:</label>
 			 <body onload="addDate();">
@@ -280,20 +200,18 @@ function addDate(){
 			</body>
 			
 			<label for="CreatedBy">CreatedBy:</label>
-			<form:input path="CreatedBy" value="${searchedUser.createdBy}"/>
+			<form:input path="CreatedBy" />
 			
 			 
 			  <label for="ModifiedDate">ModifiedDate:</label>
-			   <form:input path="ModifiedDate"  value="${searchedUser.modifiedDate}"/>
+			   <form:input path="ModifiedDate" />
 
 
 		</fieldset>
 
 		
-		<button type="submit">Update </button>
-	</form:form><br><br/>
-	<button type="button" class="btn btn-info" id="dashboard">Go to DashBoard</button>
+		<button type="submit">Sign Up</button>
+	</form:form>
+
 </body>
-
-
 </html>
