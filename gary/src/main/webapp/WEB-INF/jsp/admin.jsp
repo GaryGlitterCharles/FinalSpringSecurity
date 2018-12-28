@@ -11,8 +11,8 @@
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/button.js"></script>
 
-</head>
-<body>
+</head >
+<body background="image/img2.jpg">
 <h1>Welcome!!!</h1>
 <br><br/>
 

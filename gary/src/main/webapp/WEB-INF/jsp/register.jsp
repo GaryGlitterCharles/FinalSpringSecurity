@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admin</title>
 </head>
-<body>
+<body background="image/img2.jpg">
  <h2>Register For An Account</h2>
   
   <form:form action="" method="post" modelAttribute="user">

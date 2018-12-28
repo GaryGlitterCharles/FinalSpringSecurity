@@ -17,7 +17,7 @@
 
 <title>Insert title here</title>
 </head>
-<body>
+<body background="image/img2.jpg">
 	<div class="three">
 
 		<h2>Welcome!!!</h2>
@@ -39,7 +39,7 @@
 	<br />
 	
 
-	<div>
+	<div class="four">
 		<button type="button" class="btn btn-warning" id="allDetails">View
 			all record</button>
 	</div>

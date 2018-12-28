@@ -17,7 +17,7 @@
 <div class="login-page">
  <form action="" method="post" class="form">
 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-    <fieldset>
+   
         <legend>Please Login</legend>
         <!-- use param.error assuming FormLoginConfigurer#failureUrl contains the query parameter error -->
         <c:if test="${param.error != null}">
@@ -51,7 +51,7 @@
         <button type="submit" class="btn">Log in</button>
        
       </div>
-    </fieldset>
+    
  </form>
  </div>
 

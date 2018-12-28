@@ -13,7 +13,7 @@
 <script src="js/button.js"></script>
 <title>Insert title here</title>
 </head>
-<body>
+<body background="image/img2.jpg">
 	<h2>Welcome!!!</h2>
 
 

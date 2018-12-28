@@ -88,13 +88,3 @@
 .container .info span .fa {
   color: #EF3B3A;
 }
-body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #f4f7f2, rgb(238, 241, 235));
-  background: -moz-linear-gradient(right, #f3f5f2, rgb(238, 240, 237));
-  background: -o-linear-gradient(right, #e3f0dc, rgb(245, 244, 244));
-  background: linear-gradient(to left, #eff1ed, rgb(242, 248, 239));
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
-}

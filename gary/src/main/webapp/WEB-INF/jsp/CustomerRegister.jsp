@@ -25,7 +25,7 @@ function addDate(){
 </script>
 <title>Insert title here</title>
 </head>
-<body>
+<body background="image/img2.jpg">
 	<form:form action="" method="post" modelAttribute="saveUser" >
 
 		<h1>Sign Up</h1>
@@ -57,7 +57,7 @@ function addDate(){
 			
 			  <label for="RegistrationDate">RegistrationDate:</label>
 			 <body onload="addDate();">
-			<form:input path="RegistrationDate" id="datetext"/> 
+			<form:input path="RegistrationDate" id="datetext" readonly="text" /> 
 			</body>
 			
 			<label for="CreatedBy">CreatedBy:</label>

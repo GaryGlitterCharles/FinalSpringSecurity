@@ -37,7 +37,7 @@ function addDate(){
 	});
 </script>
 </head>
-<body>
+<body background="image/img2.jpg">
 <form:form action="" modelAttribute="getUser"
 		method="post">
 	Customer Code <form:input path="CustomerCode" />

@@ -17,12 +17,13 @@
 
 <title>search Customer</title>
 </head>
-<body>
-<p>Search by customer code or name<p><br><br/>
+<body background="image/img2.jpg">
+<div class="three"><b><p>Search by customer code or name<p></b></div>
+<br><br/>
 <div class="one">
 <form:form action="" modelAttribute="getUser" method="post">
-	Customer Code <form:input path="CustomerCode"  /><br><br/>
-	Customer Name <form:input path="CustomerName"  /><br><br/>
+	<b>Customer Code</b> <form:input path="CustomerCode"  /><br><br/>
+	<b>Customer Name</b> <form:input path="CustomerName"  /><br><br/>
 	<input type="submit" value="submit" class="btn btn-success"/><br>
 	</form:form>
 </div>
@@ -69,7 +70,8 @@
   	
    
 	<br><br/>
-
+	<div class="two">
 	<button type="button" class="btn btn-info" id="dashboard">Go to DashBoard</button>
+	</div>
 </body>
 </html>

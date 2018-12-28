@@ -18,10 +18,10 @@ div.one {
 </style>
 
 </head>
-<body>
+<body background="image/img2.jpg">
 <div class="one">
 	<form:form action="" modelAttribute="deleteUser" method="post">
-	<p>Customer Code<p>
+	<p><b>Customer Code</b><p>
 	 <form:input path="CustomerCode" />
 		<input type="submit" value="submit" class="btn btn-danger" />
 		<br>
