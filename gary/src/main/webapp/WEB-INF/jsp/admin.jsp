@@ -12,7 +12,7 @@
 <script src="js/button.js"></script>
 
 </head >
-<body background="image/img2.jpg">
+<body background="image/img2.jpg" style="margin-left: 20px;">
 <h1>Welcome!!!</h1>
 <br><br/>
 

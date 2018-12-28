@@ -13,7 +13,7 @@
 
 
 </head>
-<body>
+<body background="image/img.png">
 <div class="login-page">
  <form action="" method="post" class="form">
 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
