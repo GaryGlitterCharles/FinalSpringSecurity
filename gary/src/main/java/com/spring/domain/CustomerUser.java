@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+
 @Entity
 public class CustomerUser
 {
@@ -29,7 +30,7 @@ public class CustomerUser
 		CustomerCode = customerCode;
 	}
 
-	@Column(length = 30)
+	
 	public String getCustomerName()
 	{
 		return CustomerName;
@@ -40,7 +41,7 @@ public class CustomerUser
 		CustomerName = customerName;
 	}
 
-	@Column(length = 100)
+	
 	public String getCustomerAddress()
 	{
 		return CustomerAddress;
@@ -51,7 +52,7 @@ public class CustomerUser
 		CustomerAddress = customerAddress;
 	}
 
-	@Column(length = 6)
+	
 	public String getPincode()
 	{
 		return Pincode;
@@ -62,7 +63,7 @@ public class CustomerUser
 		Pincode = pincode;
 	}
 
-	@Column(length = 100)
+	
 	public String getEmail()
 	{
 		return Email;
@@ -73,7 +74,7 @@ public class CustomerUser
 		Email = email;
 	}
 
-	@Column(length = 20)
+	
 	public String getContactNumber()
 	{
 		return ContactNumber;
@@ -93,7 +94,7 @@ public class CustomerUser
 	{
 		RegistrationDate = registrationDate;
 	}
-
+	
 	public String getCreatedBy()
 	{
 		return CreatedBy;

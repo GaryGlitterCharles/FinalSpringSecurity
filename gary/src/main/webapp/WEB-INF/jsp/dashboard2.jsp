@@ -2,20 +2,24 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 
 
 <script src="js/button.js"></script>
 <link href="css/table.css" rel="stylesheet">
 
-<title>Insert title here</title>
+<title>Dashboard</title>
+
+
 </head>
 <body background="image/img2.jpg">
 	<div class="three">
@@ -37,12 +41,14 @@
 	</div>
 	<br>
 	<br />
-	
+
 
 	<div class="four">
 		<button type="button" class="btn btn-warning" id="allDetails">View
 			all record</button>
 	</div>
+
+
 
 	<div>
 		<table>
@@ -63,7 +69,8 @@
 			</c:forEach>
 		</table>
 	</div>
-	<br><br/>
+	<br>
+	<br />
 	<form action="/logout" method="post">
 		<input type="hidden" name="${_csrf.parameterName}"
 			value="${_csrf.token}" />

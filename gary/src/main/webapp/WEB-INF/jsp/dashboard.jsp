@@ -11,7 +11,7 @@
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 
 <script src="js/button.js"></script>
-<title>Insert title here</title>
+<title>Dashboard</title>
 </head>
 <body background="image/img2.jpg">
 	<h2>Welcome!!!</h2>

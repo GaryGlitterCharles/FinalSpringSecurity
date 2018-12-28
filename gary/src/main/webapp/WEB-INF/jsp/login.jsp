@@ -6,14 +6,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Login</title>
 
 <link href="css/style.css" rel="stylesheet">
 
 
 
 </head>
-<body background="image/img.png">
+<body>
 <div class="login-page">
  <form action="" method="post" class="form">
 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>

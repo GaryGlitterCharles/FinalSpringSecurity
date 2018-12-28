@@ -1,25 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
 <html>
 <head>
 <link href="css/cusReg.css" rel="stylesheet">
-<script src="js/cusReg.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Admin</title>
+<meta charset="ISO-8859-1">
+<title>Admin Register</title>
 </head>
-<body background="image/img2.jpg">
- <h2>Register For An Account</h2>
-  
-  <form:form action="" method="post" modelAttribute="user">
+<body>
+	<form:form action="" method="post" modelAttribute="user">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     
     <label for="name">Name:</label>
 	<form:input path="name" /><br>
 	
 	<label for="username">UserName:</label>
-	<form:input path="username" onblur="validatename(this);" /><br>
+	<form:input path="username" /><br>
 	
 	
 	<label for="password">Password:</label>

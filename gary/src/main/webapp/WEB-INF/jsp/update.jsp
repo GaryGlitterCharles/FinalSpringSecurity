@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Update</title>
 <link href="css/cusReg.css" rel="stylesheet">
 
 <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -98,18 +98,15 @@ function addDate(){
 			<label for="Email">Email:</label> 
 			<form:input path="Email" onblur="validateEmail(this);"  value="${searchedUser.email}"/>
 			
-			  <label for="RegistrationDate">RegistrationDate:</label>
-			 <body onload="addDate();">
-			<form:input path="RegistrationDate" id="datetext"/> 
-			</body>
+			
 			
 			<label for="CreatedBy">CreatedBy:</label>
 			<form:input path="CreatedBy" value="${searchedUser.createdBy}"/>
 			
-			 
 			  <label for="ModifiedDate">ModifiedDate:</label>
-			   <form:input path="ModifiedDate"  value="${searchedUser.modifiedDate}"/>
-
+			 <body onload="addDate();">
+			   <form:input path="ModifiedDate"  id="datetext" readonly="true"/>
+			</body>
 
 		</fieldset>
 
