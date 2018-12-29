@@ -12,15 +12,15 @@
 <link href="css/table.css" rel="stylesheet">
 </head>
 <body>
-<body background="image/403.png">
+<body background="image/new.jpg">
 	
 	<form action="/logout" method="post">
 		<input type="hidden" name="${_csrf.parameterName}"
 			value="${_csrf.token}" />
 		<!-- 		<button type="submit">Logout</button> -->
-		<div class="one">
+		<div style=" margin-left: 602px; margin-top: 366px;">
 
-			<button type="submit" class="btn btn-primary btn-xs" id="searchUser">Logout</button>
+			<button type="submit"  class="btn btn-primary btn-lg" id="searchUser">Go back to login page</button>
 			<br> <br />
 		</div>
 	</form>

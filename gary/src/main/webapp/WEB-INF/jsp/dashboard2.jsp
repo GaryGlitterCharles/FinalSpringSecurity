@@ -54,6 +54,7 @@
 		<table>
 
 			<c:forEach items="${allDetails}" var="element">
+
 				<tr>
 					<th>${element.customerCode}</th>
 					<th>${element.customerName}</th>
