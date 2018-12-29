@@ -30,14 +30,21 @@
 
 	<div class="two">
 		<br> <br />
-		<button type="button" class="btn btn-success" id="saveUser">Create
-			Record</button>
-		<button type="button" class="btn btn-danger" id="deleteUser">Delete
-			Record</button>
-		<button type="button" class="btn btn-warning" id="updateUser">Update
-			Record</button>
-		<button type="button" class="btn btn-info" id="searchUser">Search
-			Record</button>
+		<div>
+		<button type="button" class="btn btn-success" id="saveUser">Create Record</button>
+		</div>
+		
+			<div>
+		<button type="button" class="btn btn-danger" id="deleteUser" style="margin-left: 182px;margin-top: -59px;">Delete Record</button>
+			</div>
+			
+			<div>
+		<button type="button" class="btn btn-warning" id="updateUser" style="margin-left: 370px; margin-top: -95px;">Update Record</button>
+			</div>
+			
+			<div>
+		<button type="button" class="btn btn-info" id="searchUser" style="margin-left: 553px; margin-top: -134px;">Search Record</button>
+			</div>
 	</div>
 	<br>
 	<br />

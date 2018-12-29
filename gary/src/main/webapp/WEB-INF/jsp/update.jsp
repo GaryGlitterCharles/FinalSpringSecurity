@@ -98,15 +98,16 @@ function addDate(){
 			<label for="Email">Email:</label> 
 			<form:input path="Email" onblur="validateEmail(this);"  value="${searchedUser.email}"/>
 			
-			
-			
-			<label for="CreatedBy">CreatedBy:</label>
-			<form:input path="CreatedBy" value="${searchedUser.createdBy}"/>
-			
 			  <label for="ModifiedDate">ModifiedDate:</label>
 			 <body onload="addDate();">
 			   <form:input path="ModifiedDate"  id="datetext" readonly="true"/>
 			</body>
+					
+			<form:input path="RegistrationDate" id="datetext"  value="${searchedUser.registrationDate}" type="hidden"/> 
+			
+			<label for="CreatedBy">CreatedBy:</label>
+			<form:input path="CreatedBy" value="${searchedUser.createdBy}"/>
+			
 
 		</fieldset>
 
